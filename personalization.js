@@ -83,7 +83,7 @@ function loadcomplex() {
   var hexarea2 = document.createElement("input");pagerest.appendChild(hexarea2);hexarea2.className='input';hexarea2.placeholder='#000000';var textvalue = localStorage.getItem('text'); if(textvalue == null) {} else {hexarea2.value=textvalue}hexarea2.maxLength='7';
   var lcolorinfo = document.createElement("div");pagerest.appendChild(lcolorinfo);lcolorinfo.className='info';lcolorinfo.innerHTML='Logo Color:';
   var hexarea3 = document.createElement("input");pagerest.appendChild(hexarea3);hexarea3.className='input';hexarea3.placeholder='#000000';var logovalue = localStorage.getItem('logo'); if(logovalue == null) {} else {hexarea3.value=logovalue}hexarea3.maxLength='7';
-  var sendbutton = document.createElement("div");pagerest.appendChild(sendbutton);sendbutton.className='sendbutton';sendbutton.innerHTML='Send!';sendbutton.onclick = function sendvalues() {var gethvalue = hexarea1.value;var gettvalue = hexarea2.value;var getlvalue = hexarea3.value;if (gethvalue == '') {} else {localStorage.setItem('header', gethvalue)};if (gettvalue == '') {} else {localStorage.setItem('text', gettvalue)};changecolor();if (getlvalue == '') {} else {localStorage.setItem('logo', getlvalue)};
+  var sendbutton = document.createElement("div");pagerest.appendChild(sendbutton);sendbutton.className='sendbutton';sendbutton.innerHTML='Send!';sendbutton.onclick = function sendvalues() {var gethvalue = hexarea1.value;var gettvalue = hexarea2.value;var getlvalue = hexarea3.value;if (gethvalue == '') {} else {localStorage.setItem('header', gethvalue)};if (gettvalue == '') {} else {localStorage.setItem('text', gettvalue)};if (getlvalue == '') {} else {localStorage.setItem('logo', getlvalue)};changecolor();
   }
 }
 function changecolor(){
