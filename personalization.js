@@ -87,4 +87,4 @@ function loadcomplex() {
 function changecolor(){
   var header = document.querySelector('.styles__header___vR__R-camelCase');var htext = document.querySelector('.styles__header___vR__R-camelCase').childNodes;var htext2 = htext.childNodes;var pageheader = document.querySelector('.pageheader');var basictab = document.querySelector('.tab');var complextab = document.querySelectorAll('.tab')[1];var headervalue = localStorage.getItem('header');var textcolor = localStorage.getItem('text');pageheader.style.background=headervalue;basictab.style.color=textcolor;complextab.style.color=textcolor;if(header == null, undefined) {} else {header.style.backgroundColor=headervalue;htext.forEach(function(item) {item.style.color=textcolor;});};
 };
-window.addEventListener('locationchange', function() {console.log('location has changed')})
+window.addEventListener('popstate', function() {console.log('location has changed')})
