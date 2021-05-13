@@ -25,8 +25,8 @@ function changecolor(){
   var button2 = document.createElement("div");sarea.appendChild(button2);button2.className='button';button2.style.background='#0bc2cf';button2.onclick = function button2(){
       localStorage.setItem('header', '#0bc2cf');localStorage.setItem('text', '#ffffff');localStorage.setItem('logo', '#ffffff');changecolor();
     };
-  var button3 = document.createElement("div");sarea.appendChild(button3);button3.className='button';button3.style.background='#fff';button3.onclick = function button3(){
-      localStorage.setItem('header', '#fff');localStorage.setItem('text', '#3a3a3a');localStorage.setItem('logo', '#ffffff');changecolor();
+  var button3 = document.createElement("div");sarea.appendChild(button3);button3.className='button';button3.style.background='#ffffff';button3.onclick = function button3(){
+      localStorage.setItem('header', '#ffffff');localStorage.setItem('text', '#3a3a3a');localStorage.setItem('logo', '#ffffff');changecolor();
     };
     var button4 = document.createElement("div");sarea.appendChild(button4);button4.className='button';button4.style.background='#f9a241';button4.onclick = function button4(){
       localStorage.setItem('header', '#f9a241');localStorage.setItem('text', '#ffffff');localStorage.setItem('logo', '#ffffff');changecolor();
@@ -46,19 +46,19 @@ function loadbasic() {
   var choose = document.createElement("div");pagerest.appendChild(choose);choose.className='choose';choose.innerHTML='Choose One';
   var sarea = document.createElement("div");pagerest.appendChild(sarea);sarea.className='selectionArea';
   var button1 = document.createElement("div");sarea.appendChild(button1);button1.className='button';button1.style.background='#9a49aa';button1.onclick = function button1(){
-      localStorage.setItem('header', '#9a49aa');localStorage.setItem('text', '#ffffff');changecolor();
+      localStorage.setItem('header', '#9a49aa');localStorage.setItem('text', '#ffffff');localStorage.setItem('logo', '#ffffff');changecolor();
     };
   var button2 = document.createElement("div");sarea.appendChild(button2);button2.className='button';button2.style.background='#0bc2cf';button2.onclick = function button2(){
-      localStorage.setItem('header', '#0bc2cf');localStorage.setItem('text', '#3a3a3a');changecolor();
+      localStorage.setItem('header', '#0bc2cf');localStorage.setItem('text', '#ffffff');localStorage.setItem('logo', '#ffffff');changecolor();
     };
-  var button3 = document.createElement("div");sarea.appendChild(button3);button3.className='button';button3.style.background='#fff';button3.onclick = function button3(){
-      localStorage.setItem('header', '#ffffff');localStorage.setItem('text', '#3a3a3a');changecolor();
+  var button3 = document.createElement("div");sarea.appendChild(button3);button3.className='button';button3.style.background='#ffffff';button3.onclick = function button3(){
+      localStorage.setItem('header', '#ffffff');localStorage.setItem('text', '#3a3a3a');localStorage.setItem('logo', '#3a3a3a');changecolor();
     };
   var button4 = document.createElement("div");sarea.appendChild(button4);button4.className='button';button4.style.background='#f9a241';button4.onclick = function button4(){
-      localStorage.setItem('header', '#f9a241');localStorage.setItem('text', '#3a3a3a');changecolor();
+      localStorage.setItem('header', '#f9a241');localStorage.setItem('text', '#ffffff');localStorage.setItem('logo', '#ffffff');changecolor();
     };
   var button5 = document.createElement("div");sarea.appendChild(button5);button5.className='button';button5.style.background='#19184d';button5.onclick = function button5(){
-      localStorage.setItem('header', '#19184d');localStorage.setItem('text', '#ffffff');changecolor();
+      localStorage.setItem('header', '#19184d');localStorage.setItem('text', '#ffffff');localStorage.setItem('logo', '#ffffff');changecolor();
     };
 };
 function loadcomplex() {
@@ -77,4 +77,3 @@ function loadcomplex() {
 function changecolor(){
   var header = document.querySelector('.styles__header___vR__R-camelCase');var blooketlogo = document.querySelector('.styles__headerTextLeft___1IX-Y-camelCase');var pageheader = document.querySelector('.pageheader');var basictab = document.querySelector('.tab');var complextab = document.querySelectorAll('.tab')[1];var headervalue = localStorage.getItem('header');var logocolor = localStorage.getItem('logo');var textcolor = localStorage.getItem('text');pageheader.style.background=headervalue;basictab.style.color=textcolor;complextab.style.color=textcolor;if(header == null, undefined) {} else {header.style.backgroundColor=headervalue;blooketlogo.style.color=logocolor;}document.querySelectorAll('.styles__listIcon___JvI1r-camelCase')[0].style.color=textcolor;document.querySelectorAll('.styles__listIcon___JvI1r-camelCase')[1].style.color=textcolor;document.querySelectorAll('.styles__listIcon___JvI1r-camelCase')[2].style.color=textcolor;document.querySelector('.styles__createIcon___3PIJb-camelCase').style.color=textcolor;document.querySelector('.styles__statsIcon___1dLXo-camelCase').style.color=textcolor;document.querySelector('.styles__storeIcon___2h0yG-camelCase').style.color=textcolor;document.querySelectorAll('.styles__listIcon___JvI1r-camelCase')[3].style.color=textcolor;document.querySelectorAll('.styles__listIcon___JvI1r-camelCase')[4].style.color=textcolor;document.querySelector('.styles__logoutIcon___1hUNx-camelCase').style.color=textcolor;document.querySelectorAll('.styles__navText___MFu71-camelCase')[0].style.color=textcolor;document.querySelectorAll('.styles__navText___MFu71-camelCase')[1].style.color=textcolor;document.querySelectorAll('.styles__navText___MFu71-camelCase')[2].style.color=textcolor;document.querySelectorAll('.styles__navText___MFu71-camelCase')[3].style.color=textcolor;document.querySelectorAll('.styles__navText___MFu71-camelCase')[4].style.color=textcolor;document.querySelectorAll('.styles__navText___MFu71-camelCase')[5].style.color=textcolor;document.querySelectorAll('.styles__navText___MFu71-camelCase')[6].style.color=textcolor;document.querySelectorAll('.styles__navText___MFu71-camelCase')[7].style.color=textcolor;document.querySelectorAll('.styles__navText___MFu71-camelCase')[8].style.color=textcolor;
 };
-window.addEventListener('popstate', function() {console.log('location has changed')})
