@@ -73,7 +73,7 @@ function changecolor(){
 (function(history){
     var pushState = history.pushState;
     history.pushState = function(state) {
-      setTimeout(filechange(), 100)
+      setTimeout(filechange(), 5000)
       return pushState.apply(history, arguments);
     };
 })(window.history);
