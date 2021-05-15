@@ -73,11 +73,10 @@ function changecolor(){
 (function(history){
     var pushState = history.pushState;
     history.pushState = function(state) {
-      filechange();
+      setTimeout(loadfilechange, 100)
       return pushState.apply(history, arguments);
     };
 })(window.history);
-function filechange() {setTimeout(loadfilechange, 5000)}
 function loadfilechange() {
   var header = document.querySelector('.styles__header___vR__R-camelCase');var blooketlogo = document.querySelector('.styles__headerTextLeft___1IX-Y-camelCase');var headervalue = localStorage.getItem('header');var logocolor = localStorage.getItem('logo');var textcolor = localStorage.getItem('text');if(header == null, undefined) {} else {header.style.backgroundColor=headervalue;blooketlogo.style.color=logocolor;document.querySelectorAll('.styles__listIcon___JvI1r-camelCase')[0].style.color=textcolor;document.querySelectorAll('.styles__listIcon___JvI1r-camelCase')[1].style.color=textcolor;document.querySelectorAll('.styles__listIcon___JvI1r-camelCase')[2].style.color=textcolor;document.querySelector('.styles__createIcon___3PIJb-camelCase').style.color=textcolor;document.querySelector('.styles__statsIcon___1dLXo-camelCase').style.color=textcolor;document.querySelector('.styles__storeIcon___2h0yG-camelCase').style.color=textcolor;document.querySelectorAll('.styles__listIcon___JvI1r-camelCase')[3].style.color=textcolor;document.querySelectorAll('.styles__listIcon___JvI1r-camelCase')[4].style.color=textcolor;document.querySelector('.styles__logoutIcon___1hUNx-camelCase').style.color=textcolor;document.querySelectorAll('.styles__navText___MFu71-camelCase')[0].style.color=textcolor;document.querySelectorAll('.styles__navText___MFu71-camelCase')[1].style.color=textcolor;document.querySelectorAll('.styles__navText___MFu71-camelCase')[2].style.color=textcolor;document.querySelectorAll('.styles__navText___MFu71-camelCase')[3].style.color=textcolor;document.querySelectorAll('.styles__navText___MFu71-camelCase')[4].style.color=textcolor;document.querySelectorAll('.styles__navText___MFu71-camelCase')[5].style.color=textcolor;document.querySelectorAll('.styles__navText___MFu71-camelCase')[6].style.color=textcolor;document.querySelectorAll('.styles__navText___MFu71-camelCase')[7].style.color=textcolor;document.querySelectorAll('.styles__navText___MFu71-camelCase')[8].style.color=textcolor;};
   console.log('Updated Colors')
